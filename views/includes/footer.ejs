@@ -1,0 +1,120 @@
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left Section - Company Info -->
+    <div class="footer-section">
+      <span class="footer-logo">Wanderlust</span>
+      <span class="footer-legal">Private Limited</span>
+    </div>
+    
+    <!-- Middle Section - Copyright -->
+    <div class="footer-section">
+      <p class="copyright">&copy; 2023 Wanderlust. All rights reserved.</p>
+    </div>
+    
+    <!-- Right Section - Links & Social -->
+    <div class="footer-section">
+      <div class="footer-links">
+        <a href="/privacy" class="footer-link">Privacy Terms</a>
+        <div class="social-icons">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* Footer Styles */
+  .footer {
+    background-color: #f7f7f7;
+    padding: 1.5rem 0;
+    border-top: 1px solid #ebebeb;
+    margin-top: auto; /* Pushes footer to bottom */
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    font-weight: 700;
+    color: #FF5A5F;
+    margin-right: 0.5rem;
+  }
+
+  .footer-legal {
+    color: #767676;
+  }
+
+  .copyright {
+    color: #767676;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+
+  .footer-link {
+    color: #767676;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+
+  .footer-link:hover {
+    color: #FF5A5F;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social-link {
+    color: #484848;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+
+  .social-link:hover {
+    color: #FF5A5F;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .footer-section {
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .footer-links {
+      align-items: center;
+    }
+  }
+</style>

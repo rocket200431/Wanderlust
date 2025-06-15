@@ -1,0 +1,50 @@
+<header class="header">
+  
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <span class="logo">Wanderlust</span>
+      </a>
+      <% if(currentUser) { %>
+        <div class="user-menu">
+          <span class="username"><%= currentUser.username %></span>
+          <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+      <% } %>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .navbar {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .logo {
+    color: #FF5A5F;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .username {
+    font-weight: 500;
+  }
+  
+  .logout-btn {
+    color: #767676;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .logout-btn:hover {
+    color: #FF5A5F;
+  }
+</style>

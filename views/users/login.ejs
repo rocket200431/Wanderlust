@@ -1,0 +1,94 @@
+<%- include("../partials/header") %>
+<div class="auth-container">
+  <div class="auth-card">
+    <h1 class="auth-title">Login</h1>
+    <form class="auth-form" action="/login" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <p class="auth-alt">
+      Don't have an account? <a href="/register">Register here</a>
+    </p>
+  </div>
+</div>
+<%- include("../partials/footer") %>
+
+<style>
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem;
+  }
+
+  .auth-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .auth-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #484848;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #FF5A5F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #e04e54;
+  }
+
+  .auth-alt {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #767676;
+  }
+
+  .auth-alt a {
+    color: #FF5A5F;
+    text-decoration: none;
+    font-weight: 500;
+  }
+</style>
